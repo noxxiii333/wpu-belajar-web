@@ -91,9 +91,9 @@
                 </li>
                 <li>
                     <figure>
-                        <img src="assets/images/deny-caknan.png" alt="Deny Caknan" width="200">
+                        <img src="assets/images/denny-caknan.png" alt="Denny Caknan" width="200">
                         <figcaption>
-                            <h4>Deny Caknan</h4>
+                            <h4>Denny Caknan</h4>
                             <p>Genre: Pop Jawa / Dangdut</p>
                             <p>Day 3: (June 17)</p>
                         </figcaption>
@@ -177,7 +177,7 @@
                     </tr>
                     <tr>
                         <td>19:00 - 20:00</td>
-                        <td>Deny Caknan</td>
+                        <td>Denny Caknan</td>
                         <td>Side Stage</td>
                     </tr>
                     <tr>
@@ -207,70 +207,99 @@
 
         <!-- 2.5 TICKETS SECTION -->
         <section id="tickets">
-            <h3>Tickets</h3>
+            <h3>Get Your Tickets</h3>
             <form action="">
-                <table cellpadding="4">
-                    <tr>
-                        <td align="right">
-                            <label for="nama">Nama Lengkap:</label>
-                        </td>
-                        <td>
-                            <input type="text" name="nama" id="nama" placeholder="Masukkan Nama">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">
-                            <label for="email">Email:</label>
-                        </td>
-                        <td>
-                            <input type="email" name="email" id="email" placeholder="Masukkan Email">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">
-                            <label for="phone">Nomor Telepon:</label>
-                        </td>
-                        <td>
-                            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3}">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">
-                            <label>Tipe Tiket:</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="tipe-tiket" id="regular" checked>
-                            <label for="regular">Regular - Rp 500,000</label><br>
-                            <input type="radio" name="tipe-tiket" id="vip">
-                            <label for="vip">VIP - Rp 1,500,000</label><br>
-                            <input type="radio" name="tipe-tiket" id="vvip">
-                            <label for="vvip">VVIP - Rp 3,000,000</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">
-                            <label for="numbers">Jumlah Tiket:</label>
-                        </td>
-                        <td>
-                            <input type="number" name="number" id="number" min="1" max="10">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">
-                            <label>Day Pass:</label>
-                        </td>
-                        <td>
-                            <input type="checkbox" name="day-1" id="day-1" value="Day 1">
-                            <label for="day-1">Day 1</label><br>
-                            <input type="checkbox" name="day-2" id="day-2" value="Day 2">
-                            <label for="day-2">Day 2</label><br>
-                            <input type="checkbox" name="day-3" id="day-3" value="Day 3">
-                            <label for="day-3">Day 3</label>
-                        </td>
-                    </tr>
-                </table>
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" name="nama" id="nama" placeholder="Masukkan Nama" required autofocus autocomplete="off"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Masukkan Email" required><br>
+
+                <label for="phone">Nomor Telepon:</label><br>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{3} required"><br>
+
+                <label>Ticket Type:</label><br>
+                <input type="radio" name="tipe-tiket" id="regular" checked>
+                <label for="regular">Regular (Rp 500.000)</label><br>
+                <input type="radio" name="tipe-tiket" id="vip">
+                <label for="vip">VIP (Rp 1.500.000)</label><br>
+                <input type="radio" name="tipe-tiket" id="vvip">
+                <label for="vvip">VVIP (Rp 3.000.000)</label><br>
+
+                <label for="quantity">Jumlah Tiket:</label><br>
+                <input type="number" name="quantity" id="quantity" min="1" max="5" value="1"><br>
+
+                <label>Day Pass:</label><br>
+                <input type="checkbox" name="day-1" id="day-1">
+                <label for="day-1">Day 1 (June 15) - Hindia & Bernadya</label><br>
+                <input type="checkbox" name="day-2" id="day-2">
+                <label for="day-2">Day 2 (June 16) - Pamungkas & Nadin Amizah</label><br>
+                <input type="checkbox" name="day-3" id="day-3">
+                <label for="day-3">Day 3 (June 17) - .Feast & Denny Caknan</label><br>
+                <br>
+                <button type="submit">Book Now!</button>
             </form>
         </section>
+
+        <hr>
+
+        <!-- 2.6 GALLERY SECTION -->
+        <section id="gallery">
+            <h3>Festival Highlights 2025</h3>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="assets/images/gallery/crowded.jpeg" alt="Crowd Vibes" width="300">
+                        <figcaption>Crowd Vibes at Main Stage</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="assets/images/gallery/happy.jpeg" alt="Happy Vibes" width="300">
+                        <figcaption>Happy Faces at Side Stage</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="assets/images/gallery/chill.jpeg" alt="Chill Vibes" width="300">
+                        <figcaption>Chill Vibes at Chill Zone</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="assets/images/gallery/energic.jpeg" alt="Energetic Performance" width="300">
+                        <figcaption>Energetic Performance at Main Stage</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="assets/images/gallery/intimate.jpeg" alt="Intimate Moment" width="300">
+                        <figcaption>Intimate Moment at Side Stage</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="assets/images/gallery/formal.jpeg" alt="Formal Look" width="300">
+                        <figcaption>Formal Look at Chill Zone</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
     </main>
+
+    <hr>
+
+    <!-- 3. FOOTER SECTION -->
+    <footer>
+        <p>&copy; 2026 Festival WPU StreamFest. All Rights Reserved.</p>
+        <p>
+            Follow Us:
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Tiktok</a>
+            <a href="#" target="_blank">Twitter / X</a>
+            <a href="#" target="_blank">Youtube</a>
+        </p>
+        <p>Contact: <a href="mailto:hello@wpustreamfest.com">hello@wpustreamfest.com</a></p>
+    </footer>
 </body>
 </html>
